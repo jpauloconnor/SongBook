@@ -10,6 +10,5 @@ export class Band{
         this.name = name;
         this.description = desc;
         this.imagePath = imagePath;
-
     }
 }
