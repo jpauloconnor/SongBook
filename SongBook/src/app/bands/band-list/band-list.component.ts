@@ -9,7 +9,10 @@ import { Band } from '../band.model';
 export class BandListComponent implements OnInit {
 
   bands: Band[] = [
-    new Band("Pink Floyd", "Greatest band ever.", "www.pinkfloyd.com") 
+    new Band("Pink Floyd", "Greatest band ever.", "http://cdn.wallpapersafari.com/34/36/a2lSYG.jpg"),
+    new Band("Pink Floyd", "Greatest band ever.", "http://cdn.wallpapersafari.com/34/36/a2lSYG.jpg"),
+    new Band("Pink Floyd", "Greatest band ever.", "http://cdn.wallpapersafari.com/34/36/a2lSYG.jpg"),
+    new Band("Pink Floyd", "Greatest band ever.", "http://cdn.wallpapersafari.com/34/36/a2lSYG.jpg"),
   ];
 
   constructor() { }
