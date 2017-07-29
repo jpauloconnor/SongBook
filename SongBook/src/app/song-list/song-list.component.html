@@ -2,7 +2,14 @@
   <div class="col-xs-10">
     <app-song-edit></app-song-edit>
     <hr>
-    <p>Song List</p>
-    
+    <ul class="list-group">
+      <a 
+        class="list-group-item" 
+        style="cursor:point"
+        *ngFor="let song of songs"
+        >
+        {{song.name}} ({{song.amount}})
+        </a>  
+    </ul>    
   </div>
 </div>
