@@ -12,7 +12,7 @@ export class BandListComponent implements OnInit {
     new Band("Pink Floyd", "Greatest band ever.", "http://cdn.wallpapersafari.com/34/36/a2lSYG.jpg"),
     new Band("Pink Floyd", "Greatest band ever.", "http://cdn.wallpapersafari.com/34/36/a2lSYG.jpg"),
     new Band("Pink Floyd", "Greatest band ever.", "http://cdn.wallpapersafari.com/34/36/a2lSYG.jpg"),
-    new Band("Pink Floyd", "Greatest band ever.", "http://cdn.wallpapersafari.com/34/36/a2lSYG.jpg"),
+    new Band("Pink Floyd", "Greatest band ever.", "http://cdn.wallpapersafari.com/34/36/a2lSYG.jpg")
   ];
 
   constructor() { }
