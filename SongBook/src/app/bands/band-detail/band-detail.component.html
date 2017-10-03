@@ -1,12 +1,12 @@
 <div class="row">
   <div class="col-xs-12">
-    <img src="" alt="" class="img-responsive">
+    <img [src]="band.imagePath" alt="{{band.name}}" class="img-responsive">
   </div>
 </div>
 
 <div class="row">
   <div class="col-xs-12">
-    <h1>Band Name</h1>
+    <h1>{{band.name}}</h1>
   </div>
 </div>
 
@@ -29,7 +29,7 @@
 
 <div class="row">
   <div class="col-xs-12">
-    Description
+    {{band.description}}
   </div>
 </div>
 

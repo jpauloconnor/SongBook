@@ -1,9 +1,22 @@
 
 <div class="row">
   <div class="col-md-5">
-    <app-band-list></app-band-list>
+    <app-band-list
+      (bandWasSelected)="selectedBand = $event">
+
+
+    </app-band-list>
   </div>
   <div class="col-md-7">
-    <app-band-detail></app-band-detail>
+    <app-band-detail
+      *ngIf="selectedBand; else infoText"
+      [band]="selectedBand">
+    
+    
+    </app-band-detail>
+
+    <ng-template #infoText>
+      <p>Please select a band"</p>
+    </ng-template>
   </div>
 </div>

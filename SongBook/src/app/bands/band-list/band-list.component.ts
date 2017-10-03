@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Band } from '../band.model';
 
 @Component({
@@ -7,6 +7,7 @@ import { Band } from '../band.model';
   styleUrls: ['./band-list.component.css']
 })
 export class BandListComponent implements OnInit {
+  @Output() bandWasSelected = new EventEmitter<Band>();
 
   bands: Band[] = [
     new Band("Led Zeppelin", "Greatest band ever.", "https://commons.wikimedia.org/wiki/File:Grave_JohnBonham_sept07.JPG#/media/File:Grave_JohnBonham_sept07.JPG"),
@@ -18,6 +19,10 @@ export class BandListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onBandSelected(band: Band){
+    this.bandWasSelected.emit(band);
   }
 
 }

@@ -2,7 +2,6 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h2>SongBook</h2>
       <app-bands *ngIf="loadedFeature === 'band'"></app-bands>
       <app-song-list *ngIf="loadedFeature !== 'band'"></app-song-list>   
     </div>
