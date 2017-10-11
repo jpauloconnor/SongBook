@@ -1,13 +1,12 @@
-<h1>Song List</h1>
 <div class="row">
   <div class="col-xs-10">
-    <app-song-edit></app-song-edit>
+    <app-song-edit
+      (songAdded)="onSongAdded($event)"></app-song-edit>
     <hr>
     <ul class="list-group">
-      <!--took out href for cursor:point"-->
       <a 
         class="list-group-item" 
-        style="cursor:point"
+        style="cursor:pointer"
         *ngFor="let song of songs"
         >
         {{song.name}} ({{song.amount}})
